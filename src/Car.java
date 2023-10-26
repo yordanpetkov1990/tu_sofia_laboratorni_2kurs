@@ -11,15 +11,6 @@ public class Car {
         this.mileage = mileage;
     }
 
-    @Override
-    public String toString() {
-        return "Car{" +
-                "brand='" + brand + '\'' +
-                ", speed=" + speed +
-                ", fuel=" + fuel +
-                ", mileage=" + mileage +
-                '}';
-    }
 
     public void drive(int distance, double fuelFor100Kilometers){
         this.mileage+=distance;
@@ -31,6 +22,15 @@ public class Car {
     }
     public void refuel(int fuel){
         this.fuel+=fuel;
+    }
+    @Override
+    public String toString() {
+        return "Car{" +
+                "brand='" + brand + '\'' +
+                ", speed=" + speed +
+                ", fuel=" + fuel +
+                ", mileage=" + mileage +
+                '}';
     }
 
 
