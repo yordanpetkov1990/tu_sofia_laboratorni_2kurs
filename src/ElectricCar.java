@@ -7,7 +7,6 @@ public class ElectricCar extends Car {
         this.batteryLevel = batteryLevel;
         this.efficiency = efficiency;
     }
-    // ?????????????????????????
     public void driveElectric(int distance,int batteryAmount){
         super.setMileage(super.getMileage() + distance);
         this.batteryLevel-=batteryAmount*this.efficiency;
